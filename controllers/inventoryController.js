@@ -265,3 +265,6 @@ module.exports = {
   getInventoryHospitalController,
   getRecentInventoryController,
 };
+
+
+    
