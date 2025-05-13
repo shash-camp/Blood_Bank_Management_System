@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import InputType from "./../Form/InputType";
 import API from "./../../../services/API";
+ 
+ 
 
 const Modal = () => {
   const [inventoryType, setInventoryType] = useState("in");
@@ -105,7 +107,7 @@ const Modal = () => {
                 <option value={"B-"}>B-</option>
               </select>
               <InputType
-                labelText={"Donar Email"}
+                labelText={"Donor / Consumer Email"}
                 labelFor={"donarEmail"}
                 inputType={"email"}
                 value={email}

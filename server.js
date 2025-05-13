@@ -36,3 +36,4 @@ app.listen(PORT, () => {
     `Node Server Running In ${process.env.DEV_MODE} Mode On Port ${PORT}`.bgBlue.white
   );
 });
+
