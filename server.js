@@ -54,7 +54,12 @@ const app = express();
 
 // Middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+"https://blood-bank-management-system-1-qvxw.onrender.com"                // for local development
+    // your deployed frontend
+  ],
+  credentials: true));
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
