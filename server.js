@@ -59,7 +59,8 @@ app.use(cors({
 "https://blood-bank-management-system-1-qvxw.onrender.com"                // for local development
     // your deployed frontend
   ],
-  credentials: true));
+  credentials: true
+}));
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
